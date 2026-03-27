@@ -23,6 +23,8 @@ setup(
             'offboard_control = drone_precision_landing_py.offboard_control:main',
             'mission_manager = drone_precision_landing_py.mission_manager:main',
             'pad_detector = drone_precision_landing_py.pad_detector:main',
+            'pad_tracker_ekf = drone_precision_landing_py.pad_tracker_ekf:main',
+            'landing_manager = drone_precision_landing_py.landing_manager:main',
         ],
     },
 )
