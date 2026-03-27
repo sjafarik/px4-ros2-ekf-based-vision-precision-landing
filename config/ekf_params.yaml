@@ -1,0 +1,6 @@
+pad_tracker_ekf:
+  ros__parameters:
+    rate_hz: 20.0
+    q_pos: 0.01
+    q_vel: 0.1
+    r_meas: 0.05

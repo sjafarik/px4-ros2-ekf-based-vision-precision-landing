@@ -1,0 +1,7 @@
+offboard_control_node:
+  ros__parameters:
+    default_target_x: 0.0
+    default_target_y: 0.0
+    default_target_z: -5.0
+    target_yaw: 0.0
+    setpoint_rate_hz: 10.0

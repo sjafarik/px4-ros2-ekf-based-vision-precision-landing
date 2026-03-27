@@ -1,0 +1,16 @@
+mission_manager_node:
+  ros__parameters:
+    takeoff_altitude: -5.0
+    xy_tolerance: 0.75
+    z_tolerance: 0.50
+    hold_count_required: 5
+    landing_search_hold_count: 10
+
+    waypoints: [5.0, 0.0, -5.0]
+
+    landing_staging_x: 0.0
+    landing_staging_y: 0.0
+    landing_staging_z: -5.0
+    landing_staging_yaw: 0.0
+
+    skip_waypoints_and_land: false

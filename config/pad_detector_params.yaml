@@ -1,0 +1,19 @@
+pad_detector_node:
+  ros__parameters:
+    image_topic: /camera/image_raw
+    min_area: 500.0
+    debug_view: true
+
+    red1_h_min: 0
+    red1_h_max: 10
+    red1_s_min: 100
+    red1_s_max: 255
+    red1_v_min: 100
+    red1_v_max: 255
+
+    red2_h_min: 160
+    red2_h_max: 179
+    red2_s_min: 100
+    red2_s_max: 255
+    red2_v_min: 100
+    red2_v_max: 255
