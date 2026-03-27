@@ -39,6 +39,9 @@ class PadDetectorNode(Node):
         self.declare_parameter('red2_v_min', 100)
         self.declare_parameter('red2_v_max', 255)
 
+        self.declare_parameter('debug_window_scale', 0.5)
+        self.debug_window_scale = float(self.get_parameter('debug_window_scale').value)
+
         self.image_topic = str(self.get_parameter('image_topic').value)
         self.min_area = float(self.get_parameter('min_area').value)
         self.debug_view = bool(self.get_parameter('debug_view').value)
@@ -206,7 +209,19 @@ class PadDetectorNode(Node):
                         2
                     )
 
-                    cv2.imshow('pad_detector_debug', debug_frame)
+                    scale = self.debug_window_scale
+
+                    if 0.0 < scale < 1.0:
+                        display_frame = cv2.resize(
+                            debug_frame,
+                            None,
+                            fx=scale,
+                            fy=scale
+                        )
+                    else:
+                        display_frame = debug_frame
+
+                    cv2.imshow('pad_detector_debug', display_frame)
                     cv2.waitKey(1)
 
         self.visible_pub.publish(visible_msg)

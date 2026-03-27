@@ -3,8 +3,8 @@ landing_manager:
     k_xy: 0.8
     max_step_xy: 0.25
     alignment_threshold: 0.12
-    alignment_hold_required: 5
-    descent_step: 0.08
-    landing_trigger_z: -0.8
+    alignment_hold_required: 3
+    descent_step: 0.5
+    landing_trigger_z: -2.0
     lost_pad_limit: 20
     landing_yaw: 0.0

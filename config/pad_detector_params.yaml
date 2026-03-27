@@ -4,6 +4,8 @@ pad_detector_node:
     min_area: 500.0
     debug_view: true
 
+    debug_window_scale: 0.5
+
     red1_h_min: 0
     red1_h_max: 10
     red1_s_min: 100
