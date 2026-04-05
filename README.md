@@ -235,11 +235,11 @@ debug_window_scale: 0.5
 
 ## 🧑‍💻 Author
 
-**Your Name**
+**Saeed Jafari Kang**
 
 * Robotics / Autonomous Systems
 * ROS 2 + PX4 + Computer Vision
-* GitHub: *(your link)*
+* GitHub: *(github.com/sjafarik)*
 
 ---
 
